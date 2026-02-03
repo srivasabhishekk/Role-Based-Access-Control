@@ -10,7 +10,10 @@ dbConnection()
 
 app.use(express.json())
 
+// Authorization Routes
 app.use('/api/auth', authRoute)
+
+// User Routes
 app.use('/api/user', userRoute)
 
 port = process.env.PORT || 7002
